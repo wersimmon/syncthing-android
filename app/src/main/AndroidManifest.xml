@@ -8,8 +8,6 @@
     <uses-feature android:name="android.hardware.location.gps" android:required="false" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION is required to access files from other apps on 11 "R" -->
-    <uses-permission android:name="android.permission.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -36,6 +34,7 @@
         android:description="@string/app_description"
         android:supportsRtl="true"
         android:installLocation="internalOnly"
+        android:requestLegacyExternalStorage="true"
         android:name=".SyncthingApp">
         <activity
                 android:name=".activities.FirstStartActivity"
